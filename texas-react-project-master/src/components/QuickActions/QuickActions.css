@@ -1,0 +1,36 @@
+.quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.quick-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3) var(--space-5);
+  background: var(--primary);
+  color: white;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: background var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.quick-action-btn:hover {
+  background: var(--primary-hover);
+  color: white;
+  text-decoration: none;
+}
+
+.quick-action-btn:active {
+  background: var(--primary-active);
+}
+
+.quick-action-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}

@@ -1,0 +1,95 @@
+.money-transfer {
+  padding: 0 0 var(--space-8);
+}
+
+.transfer-card {
+  max-width: 420px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-subtle);
+}
+
+.transfer-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.transfer-success {
+  padding: var(--space-4);
+  background: var(--success-bg);
+  color: var(--success);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-6);
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.transfer-error {
+  padding: var(--space-3);
+  background: var(--danger-bg);
+  color: var(--danger);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.transfer-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.transfer-input {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  background: var(--input-bg);
+  color: var(--text-primary);
+}
+
+.transfer-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-subtle);
+}
+
+.transfer-input:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  background: var(--bg);
+}
+
+.transfer-select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+.transfer-button {
+  margin-top: var(--space-2);
+  padding: var(--space-4) var(--space-6);
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.transfer-button:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.transfer-button:active:not(:disabled) {
+  background: var(--primary-active);
+}
+
+.transfer-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

@@ -1,0 +1,89 @@
+.income-expense-chart {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-subtle);
+}
+
+.chart-title {
+  margin: 0 0 var(--space-4);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.chart-legend {
+  display: flex;
+  gap: var(--space-5);
+  margin-bottom: var(--space-4);
+  font-size: 0.8125rem;
+}
+
+.chart-legend-item.income {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.chart-legend-item.expense {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.chart-bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.chart-group {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.chart-month {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.chart-bar-row {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  min-height: 26px;
+}
+
+.chart-bar {
+  height: 26px;
+  border-radius: 4px;
+  min-width: 4px;
+  transition: width 0.35s ease;
+}
+
+.chart-bar.income {
+  background: var(--success);
+}
+
+.chart-bar.expense {
+  background: var(--text-muted);
+  opacity: 0.85;
+}
+
+.chart-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-8);
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.chart-loading .loading-spinner {
+  width: 22px;
+  height: 22px;
+  border-width: 2px;
+}

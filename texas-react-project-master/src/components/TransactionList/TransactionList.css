@@ -1,0 +1,78 @@
+.transaction-list {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.transaction-list-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.transaction-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--border-subtle);
+  gap: var(--space-4);
+  transition: background var(--transition-fast);
+}
+
+.transaction-list-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-list-item:hover {
+  background: var(--bg);
+}
+
+.transaction-list-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.transaction-list-desc {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+}
+
+.transaction-list-date {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.transaction-list-amount {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+.transaction-list-amount.credit {
+  color: var(--success);
+}
+
+.transaction-list-amount.debit {
+  color: var(--text-primary);
+}
+
+.transaction-list-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-8);
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.transaction-list-loading .loading-spinner {
+  width: 22px;
+  height: 22px;
+  border-width: 2px;
+}
